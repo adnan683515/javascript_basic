@@ -49,3 +49,26 @@ console.log(Nam.indexOf('habib'))
 
 console.log(Nam.includes('habib'))
 
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits.toLocaleString())
+console.log(fruits.sort())
+
+const amrname = 'adnan'
+console.log(amrname.split(""))
+
+const myGirls = ["Cecilie", "Lone"];
+const myBoys = ["Emil", "Tobias", "Linus"];
+
+const myChildren = myGirls.concat(myBoys);
+// const myChildren = myBoys+myGirls;
+console.log(myChildren)
+const myArr = [[1,2],[3,4],[5,6]];
+const newArr = myArr.flat();
+console.log(newArr)
+
+const fol = ["Banana", "Orange", "Apple", "Mango"];
+fol.splice(2,0, "Lemon", "Kiwi");
+
+const ans = fol.splice(3,3)
+console.log(ans)
+console.log(fol)

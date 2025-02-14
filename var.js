@@ -16,7 +16,9 @@ function fun(num){
 }
 fun(number)
 
-const statement = 'I am a hard working person'
+const statement = 'i am a hard working person'
+const FullName ="Adnan Miya"
+console.log("upercase",FullName)
 var numbers = ['Tom', 'Tim', 'Tin', 'Tik']
 
 console.log(statement)

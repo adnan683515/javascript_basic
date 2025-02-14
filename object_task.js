@@ -50,3 +50,5 @@ const Obj = {
 for (const key in Obj) {
     console.log(key, ":", Obj[key], "type |", typeof Obj[key])
 }
+
+

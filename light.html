@@ -45,40 +45,93 @@
 
     <button onclick="document.write(6+100)">try it</button>
     <p id="demo"></p>
+    <h1 id="obj"></h1>
+    <h1 id="demo2"></h1>
     <script>
+
+        const person = {
+            name: "John",
+            age: 30,
+            city: "New York"
+        };
+        const array = ['Golam', 'Faruk', 'Adnan']
+        document.write(array.splice(1, 1))
+        document.write(array)
+        let text = ' '
+
+        const store = document.write(Object.values(person))
+        document.write("tpye of", typeof store)
+        for (const value in person) {
+
+            text += person[value];
+
+        }
+        document.write("Demo 2:");
+        document.getElementById('demo2').innerHTML = text;
+
+
+        // document.getElementById("obj").innerHTML = person.name +' '+ person.city;
 
         {
             var v = 30;
-    
+
         }
         document.write(v)
-        
+
         <!-- window.alert("Hello") -->
         let $$$ = 2;
         let $myMoney = 5;
 
         document.getElementById("demo").innerHTML = $$$ + $myMoney;
-        let x = "5"+5+4;
-        let y = 5+4+"3";
-        let z = 4+5-2;
-        
+        let x = "5" + 5 + 4;
+        let y = 5 + 4 + "3";
+        let z = 4 + 5 - 2;
 
-        var  s = 10;
+
+        var s = 10;
         var k = "10";
         document.write(s)
 
 
-        if (k=== s){
+        if (k === s) {
             document.write("k , s value and type same")
         }
-        else{
+        else {
             document.write("k s not same ")
         }
-    
-    
+
+
     </script>
+    <br>
+    <br>
+
+    <script>
+
+        const fruits = ['apple', 'banana', 'guyava', 'mango', 'jack fruits']
+
+        for (let [key, value] of fruits.entries()) {
+            document.write(key, " : ", value, " ")
+        }
 
 
+
+    </script>
+    <br>
+    <script>
+        let ss = "We are the so-called \"Vikings\" from the north.";
+        console.log(ss)
+        function Person(first, last, age, eye) {
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
+        }
+
+        const obj = new Person('Adnan', 'Miya', 21, 'black')
+        console.log(obj)
+        document.write("Make a object", obj.firstName)
+    </script>
+    <button onkeydown="this.innerHTML=Date()">The time is?</button>
 
 </body>
 
